@@ -1,0 +1,16 @@
+{
+	// orderprice page
+
+	// optional
+	// "asked_order_id": 1,
+
+	// required
+	"date": "",
+	"asked_username": "monkey king",
+	"asked_state": "high",
+	"src_point_type": "line",
+	"dest_point_type": "rakuten",
+	"src_bid_points": 553,
+	"dest_ask_points": 533,
+	"transcation_state": "dealing",
+}

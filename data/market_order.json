@@ -1,0 +1,15 @@
+{
+	// index page
+
+	// optional
+	// "market_order_id": 1,
+
+	// required
+	"date": "",
+	"username": "super fox",
+	"src_point_type": "line",
+	"dest_point_type": "rakuten",
+	"revision_times": "11",
+	"src_bid_points": 553,
+	"dest_ask_points": 533
+}
