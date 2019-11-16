@@ -1,0 +1,11 @@
+
+
+// 點數掛單交易
+// 傳出的參數
+// 使用http form post
+$params = [
+    'select_src' => $_POST['select_src'],
+    'select_dest' => $_POST['select_dest'],
+    'total_price' => $_POST['total_price'],
+];
+

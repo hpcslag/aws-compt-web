@@ -462,49 +462,51 @@
 									<span aria-hidden="true">&times;</span>
 								</button>
 							</div>
-							<div class="modal-body">
-								<p>交易順序: 填寫訂單 -> 從您的平台連線扣取點數 -> 正式掛單等待交易</p>
+                            <form name="sendOrderForm" action="sendOrder.php" method="post">
+    							<div class="modal-body">
+    								<p>交易順序: 填寫訂單 -> 從您的平台連線扣取點數 -> 正式掛單等待交易</p>
 
-								<br />
-								<div class="row form-group">
-									<div class="col col-md-3">
-										<label for="select" class=" form-control-label">選擇要掛單的點數</label>
-									</div>
-									<div class="col-12 col-md-9">
-										<select name="select" id="select" class="form-control">
-											<option value="0">請選擇</option>
-											<option value="1">LINE POINT</option>
-											<option value="2">樂天點數</option>
-											<option value="3">P 幣</option>
-											<option value="4">蝦幣</option>
-										</select>
-									</div>
-								</div>
-								<br />
-								<div class="row form-group">
-									<div class="col col-md-3">
-										<label for="select" class=" form-control-label">選擇要交換的點數</label>
-									</div>
-									<div class="col-12 col-md-9">
-										<select name="select" id="select" class="form-control">
-											<option value="0">請選擇</option>
-											<option value="1">LINE POINT</option>
-											<option value="2">樂天點數</option>
-											<option value="3">P 幣</option>
-											<option value="4">蝦幣</option>
-										</select>
-									</div>
-								</div>
-								<br />
-								<div class="form-group">
-									<label for="cc-payment" class="control-label mb-1">交易數量</label>
-									<input id="cc-pament" name="cc-payment" type="text" class="form-control" aria-required="true" aria-invalid="false" value="100.00">
-								</div>
-							</div>
-							<div class="modal-footer">
-								<button type="button" class="btn btn-secondary" data-dismiss="modal">取消</button>
-								<button type="button" class="btn btn-primary">確認兌換</button>
-							</div>
+    								<br />
+    								<div class="row form-group">
+    									<div class="col col-md-3">
+    										<label for="select" class=" form-control-label">選擇要掛單的點數</label>
+    									</div>
+    									<div class="col-12 col-md-9">
+    										<select name="select_src" id="select" class="form-control">
+    											<option value="0">請選擇</option>
+                                                <option value="line">LINE POINT</option>
+                                                <option value="rakuten">樂天點數</option>
+                                                <option value="p_point">P 幣</option>
+                                                <option value="shopee">蝦幣</option>
+    										</select>
+    									</div>
+    								</div>
+    								<br />
+    								<div class="row form-group">
+    									<div class="col col-md-3">
+    										<label for="select" class=" form-control-label">選擇要交換的點數</label>
+    									</div>
+    									<div class="col-12 col-md-9">
+    										<select name="select_dest" id="select" class="form-control">
+    											<option value="0">請選擇</option>
+    											<option value="line">LINE POINT</option>
+    											<option value="rakuten">樂天點數</option>
+    											<option value="p_point">P 幣</option>
+    											<option value="shopee">蝦幣</option>
+    										</select>
+    									</div>
+    								</div>
+    								<br />
+    								<div class="form-group">
+    									<label for="cc-payment" class="control-label mb-1">交易數量</label>
+    									<input id="cc-pament" name="total_price" type="text" class="form-control" aria-required="true" aria-invalid="false" value="100.00">
+    								</div>
+    							</div>
+    							<div class="modal-footer">
+    								<button type="button" class="btn btn-secondary" data-dismiss="modal">取消</button>
+    								<button type="button" class="btn btn-primary" onclick="document.sendOrderForm.submit()">確認兌換</button>
+    							</div>
+                            </form>
 						</div>
 					</div>
 				</div>

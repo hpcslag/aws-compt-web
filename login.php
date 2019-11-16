@@ -47,10 +47,10 @@
                             </a>
                         </div>
                         <div class="login-form">
-                            <form action="" method="post">
+                            <form action="loginProcess.php">
                                 <div class="form-group">
                                     <label>電話號碼</label>
-                                    <input class="au-input au-input--full" type="text" name="email"" placeholder="手機號碼 0912345678">
+                                    <input class="au-input au-input--full" type="text" name="phone" value="0912345678" placeholder="手機號碼 0912345678">
                                 </div>
                                 <button class="au-btn au-btn--block au-btn--green m-b-20" type="submit">使用簡訊登入</button>
 

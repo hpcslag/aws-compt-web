@@ -1,5 +1,8 @@
 <?php
 
+// register url
+$registerUrl = 'http://18.179.14.255/login';
+
 // index page
 $marketOrderUrl = 'data/market_order.json';
 
@@ -8,6 +11,9 @@ $myBidOrderUrl = 'data/my_bid_order.json';
 
 // orderprice page
 $myAskOrderUrl = 'data/my_ask_order.json';
+
+// create Oreder API
+$createOrderUrl = 'http://localhost/aws-compt-web/sendOrderAPI.php';
 
 // icon url
 $iconUrl = [
