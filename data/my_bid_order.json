@@ -8,6 +8,7 @@
 	"date": "",
 	"asked_username": "monkey king",
 	"asked_state": "high",
+	"user_id": 1,
 	"src_point_type": "line",
 	"dest_point_type": "rakuten",
 	"src_bid_points": 553,

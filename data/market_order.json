@@ -7,6 +7,7 @@
 	// required
 	"date": "",
 	"username": "super fox",
+	"user_id" : 1, 
 	"src_point_type": "line",
 	"dest_point_type": "rakuten",
 	"revision_times": "11",
