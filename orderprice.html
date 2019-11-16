@@ -331,59 +331,13 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-md-12">
-                            <h1 class="title-4">熱門點數 (目前掛單總量)</h1>
+                            <h1 class="title-4">我的出價</h1>
                             <hr class="line-seprate">
                         </div>
                     </div>
                 </div>
             </section>
             <!-- END WELCOME-->
-
-            <!-- STATISTIC-->
-            <section class="statistic statistic2">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-6 col-lg-3">
-                            <div class="statistic__item statistic__item--green">
-                                <h2 class="number">21,474</h2>
-                                <span class="desc">LINE POINTS <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTaadakOa7E3anC-jk7OpMV53VrMHkG2nNK5al8ngR4fJn1mHmB&amp;s" alt="" style=" width: 20px; border-radius: 25px; box-shadow: white 0px 0px 2px; "></span>
-                                <div class="icon">
-                                    <i class="zmdi zmdi-label"></i>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-lg-3">
-                            <div class="statistic__item statistic__item--orange">
-                                <h2 class="number">38,688</h2>
-                                <span class="desc">蝦幣 <img src="https://cimg.pcstore.com.tw/cprd/C1079856571_big.png?pimg=static&P=1485678917" alt="" style=" width: 20px; border-radius: 25px; box-shadow: white 0px 0px 2px; "></span>
-                                <div class="icon">
-                                    <i class="zmdi zmdi-label"></i>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-lg-3">
-                            <div class="statistic__item statistic__item--blue">
-                                <h2 class="number">1,086</h2>
-                                <span class="desc">P 幣 <img src="https://www.piapp.com.tw/assets/event/picard/img/ppoint.png" alt="" style=" width: 20px; border-radius: 25px; box-shadow: white 0px 0px 2px; "></span>
-                                <div class="icon">
-                                    <i class="zmdi zmdi-label"></i>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-lg-3">
-                            <div class="statistic__item statistic__item--red">
-                                <h2 class="number">60,386</h2>
-                                <span class="desc">樂天點數 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRiDHU-shrV8NDB8hRjIu61vQcJXEBng0zWFBS91kzIscN492P4&s" alt="" style=" width: 20px; border-radius: 25px; box-shadow: white 0px 0px 2px; "></span>
-                                <div class="icon">
-                                    <i class="zmdi zmdi-label"></i>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <!-- END STATISTIC-->
-
             
 
             <!-- DATA TABLE-->
@@ -414,8 +368,6 @@
                                         <i class="zmdi zmdi-filter-list"></i>過濾</button>
                                 </div>
                                 <div class="table-data__tool-right">
-                                    <button class="au-btn au-btn-icon au-btn--green au-btn--small" data-toggle="modal" data-target="#placeOrderDialog">
-										<i class="zmdi zmdi-plus"></i>我要掛單賣點數</button>
                                     <div class="rs-select2--dark rs-select2--sm rs-select2--dark2">
                                         <select class="js-select2" name="type">
                                             <option selected="selected">輸出列印</option>
@@ -433,10 +385,9 @@
                                             <th>掛單者暱稱</th>
                                             <th>原點數類別</th>
                                             <th>目標點數類別</th>
-                                            <th>經過調價次數</th>
                                             <th>原點數數量</th>
-                                            <th>目標點數數量 (系統產生)</th>
-                                            <th></th>
+                                            <th>出價點數數量</th>
+                                            <th>出價狀態</th>
                                         </tr>
                                     </thead>
                                     <tbody>
@@ -446,22 +397,75 @@
 											</td>
                                             <td>LINE POINT &nbsp;<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTaadakOa7E3anC-jk7OpMV53VrMHkG2nNK5al8ngR4fJn1mHmB&s" alt="" style=" width: 20px; border-radius: 25px;"></td>
                                             <td>樂天點數 &nbsp;<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRiDHU-shrV8NDB8hRjIu61vQcJXEBng0zWFBS91kzIscN492P4&s" alt="" style=" width: 20px; border-radius: 25px;"></td>
-                                            <td>11 次</td>
-											<td>
+                                            <td>
 												<span class="" style=" color: red; ">553 點</span>
 											</td>
 											<td>
-												<span class="status--process">553 點</span>
+												<span class="" style=" color: blue; ">553 點</span>
 											</td>
-                                            <td>
-                                                <div class="table-data-feature">
-													<button type="button" class="btn btn-outline-success btn-sm"  data-toggle="modal" data-target="#directExchangeDialog"><i class="fa fa-send"></i>&nbsp; 直接兌換</button>
-													&nbsp;&nbsp;&nbsp;&nbsp;
-                                                    <button type="button" class="btn btn-outline-secondary btn-sm"  data-toggle="modal" data-target="#orderpriceDialog"><i class="fa fa-lightbulb-o"></i>&nbsp; 妥協數量</button>
-                                                </div>
-                                            </td>
+											<td>
+												<span class="status--process">直接交易</span>
+											</td>
                                         </tr>
-                                        <tr class="spacer"></tr>
+										
+										<tr class="spacer"></tr>
+
+
+										<tr class="tr-shadow">
+											<td>
+												<span class="block-email">超級狐狸</span>
+											</td>
+                                            <td>LINE POINT &nbsp;<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTaadakOa7E3anC-jk7OpMV53VrMHkG2nNK5al8ngR4fJn1mHmB&s" alt="" style=" width: 20px; border-radius: 25px;"></td>
+                                            <td>樂天點數 &nbsp;<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRiDHU-shrV8NDB8hRjIu61vQcJXEBng0zWFBS91kzIscN492P4&s" alt="" style=" width: 20px; border-radius: 25px;"></td>
+                                            <td>
+												<span class="" style=" color: red; ">553 點</span>
+											</td>
+											<td>
+												<span class="" style=" color: blue; ">403 點</span>
+											</td>
+											<td>
+												<span class="status--process">已被接受</span>
+											</td>
+										</tr>
+
+
+										<tr class="spacer"></tr>
+										
+										<tr class="tr-shadow">
+											<td>
+												<span class="block-email">超級狐狸</span>
+											</td>
+                                            <td>LINE POINT &nbsp;<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTaadakOa7E3anC-jk7OpMV53VrMHkG2nNK5al8ngR4fJn1mHmB&s" alt="" style=" width: 20px; border-radius: 25px;"></td>
+                                            <td>樂天點數 &nbsp;<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRiDHU-shrV8NDB8hRjIu61vQcJXEBng0zWFBS91kzIscN492P4&s" alt="" style=" width: 20px; border-radius: 25px;"></td>
+                                            <td>
+												<span class="" style=" color: red; ">553 點</span>
+											</td>
+											<td>
+												<span class="" style=" color: blue; ">403 點</span>
+											</td>
+											<td>
+												<span>等待中</span>
+											</td>
+										</tr>
+
+										<tr class="spacer"></tr>
+										
+										<tr class="tr-shadow">
+											<td>
+												<span class="block-email">超級狐狸</span>
+											</td>
+                                            <td>LINE POINT &nbsp;<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTaadakOa7E3anC-jk7OpMV53VrMHkG2nNK5al8ngR4fJn1mHmB&s" alt="" style=" width: 20px; border-radius: 25px;"></td>
+                                            <td>樂天點數 &nbsp;<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRiDHU-shrV8NDB8hRjIu61vQcJXEBng0zWFBS91kzIscN492P4&s" alt="" style=" width: 20px; border-radius: 25px;"></td>
+                                            <td>
+												<span class="" style=" color: red; ">553 點</span>
+											</td>
+											<td>
+												<span class="" style=" color: blue; ">403 點</span>
+											</td>
+											<td>
+												<span style=" color: red; ">出價失敗 (已由其他人成功交易)</span>
+											</td>
+                                        </tr>
                                     </tbody>
                                 </table>
                             </div>
@@ -470,7 +474,6 @@
                 </div>
             </section>
 			<!-- END DATA TABLE-->
-
 			<!-- 掛單點數 -->
 			<div class="modal fade" id="placeOrderDialog" tabindex="-1" role="dialog" aria-labelledby="mediumModalLabel" aria-hidden="true">
 					<div class="modal-dialog modal-lg" role="document">
@@ -528,70 +531,6 @@
 					</div>
 				</div>
 				<!-- end 掛單點數 -->
-
-			<!-- 妥協數量 -->
-			<div class="modal fade" id="orderpriceDialog" tabindex="-1" role="dialog" aria-labelledby="mediumModalLabel" aria-hidden="true">
-				<div class="modal-dialog modal-lg" role="document">
-					<div class="modal-content">
-						<div class="modal-header">
-							<h5 class="modal-title" id="mediumModalLabel"><h2>點數掛單交易</h2></h5>
-							<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-								<span aria-hidden="true">&times;</span>
-							</button>
-						</div>
-						<div class="modal-body">
-							<p>交易順序: 填寫數量 -> 從您的平台連線扣取點數 -> 等待交易</p>
-							
-							<br />
-							<div class="form-group">
-								<label for="cc-payment" class="control-label mb-1">交易數量</label>
-								<input id="cc-pament" name="cc-payment" type="text" class="form-control" aria-required="true" aria-invalid="false" value="100.00">
-							</div>
-							<p>*每次出價需要扣除等值 1 元台幣的點數，如果兌換失敗，將會退還!</p>
-						</div>
-						<div class="modal-footer">
-							<button type="button" class="btn btn-secondary" data-dismiss="modal">取消</button>
-							<button type="button" class="btn btn-primary">確認兌換</button>
-						</div>
-					</div>
-				</div>
-			</div>
-			<!-- end 妥協數量 -->
-
-			<!-- 直接兌換 -->
-			<div class="modal fade" id="directExchangeDialog" tabindex="-1" role="dialog" aria-labelledby="mediumModalLabel" aria-hidden="true">
-				<div class="modal-dialog modal-lg" role="document">
-					<div class="modal-content">
-						<div class="modal-header">
-							<h5 class="modal-title" id="mediumModalLabel"><h2>點數掛單交易</h2></h5>
-							<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-								<span aria-hidden="true">&times;</span>
-							</button>
-						</div>
-						<div class="modal-body">
-							<p>交易順序: 填寫數量 -> 從您的平台連線扣取點數 -> 完成交易</p>
-							
-							<br />
-							
-							<p>請確認您的交易:
-								<br/>
-								<br/>您使用: LINE POINT 663 點
-								<br/>
-								兌換
-								<br/>
-								樂天點數 663 點。
-								<br/>
-
-							</p>
-						</div>
-						<div class="modal-footer">
-							<button type="button" class="btn btn-secondary" data-dismiss="modal">取消</button>
-							<button type="button" class="btn btn-primary">確認兌換</button>
-						</div>
-					</div>
-				</div>
-			</div>
-			<!-- end 直接兌換 -->
 
             <!-- COPYRIGHT-->
             <section class="p-t-60 p-b-20">

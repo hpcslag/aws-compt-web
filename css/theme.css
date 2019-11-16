@@ -2577,7 +2577,7 @@ section {
 }
 
 .header-desktop3 {
-    background: #393939;
+    background: #f7f7f7;
     display: -webkit-box;
     display: -webkit-flex;
     display: -moz-box;
@@ -2690,7 +2690,7 @@ section {
 .header__navbar ul li a {
     display: block;
     font-size: 16px;
-    color: #ccc;
+    color: #4e4e4e;
     padding: 25px 30px;
     border-left: 1px solid rgba(255, 255, 255, 0.102);
 }
