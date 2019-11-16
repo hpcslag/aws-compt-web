@@ -1,5 +1,4 @@
 <?php
-var_dump($_POST);
 
 require_once 'config.php';
 
@@ -31,11 +30,15 @@ $result = file_get_contents(
     false,
     $context);
 
-header("refresh:5; url=index.php");
-
 $r = json_decode($result, true);
-if ('false' == $r['error'] && isset($r['id'])) {
-    echo "login success!";
+
+session_start();
+
+header("refresh:5; url=index.php");
+if (!$r['error'] && isset($r['id'])) {
+    echo "Login success! <br>Go to index page after 5 seconds...";
+    $_SESSION['user_id'] = $r['id'];
 } else {
     echo "invalid phone number!";
+    session_destroy();
 }
