@@ -1,16 +1,12 @@
 {
-	// myorder page
-
-	// optional
-	// "bid_order_id": 1,
-
-	// required
-	"date": "",
-	"bid_username": "gorilla fuker",
-	"asked_state": "high",
-	"src_point_type": "line",
-	"dest_point_type": "rakuten",
-	"src_bid_points": 553,
-	"dest_ask_points": 533,
-	"transcation_state": "dealing",
+    "data": [{
+        "date": "",
+        "bid_username": "gorilla fuker",
+        "asked_state": "high",
+        "src_point_type": "line",
+        "dest_point_type": "rakuten",
+        "src_bid_points": 599,
+        "dest_ask_points": 599,
+        "transcation_state": "waiting"
+    }]
 }
