@@ -6,18 +6,23 @@ global $iconUrl;
 global $platformName;
 global $myAskOrderUrl;
 
-$result = json_decode(file_get_contents($myAskOrderUrl), true);
-$orders = $result['data'];
+// $url = $myAskOrderUrl . '?user_id=' . $_SESSION['user_id'];
+$url = $myAskOrderUrl;
+$orders = json_decode(file_get_contents($url), true);
 
 foreach ($orders as $order) {
-    $username = $order['bid_username'];
+    $username = $order['username'];
+    // $username = $order['bid_username'];
     $askedState = $order['asked_state'];
 
     $srcPointType = $order['src_point_type'];
     $destPointType = $order['dest_point_type'];
     $revisionTimes = $order['revision_times'];
-    $srcBidPoints = $order['src_bid_points'];
-    $destAskPoints = $order['dest_ask_points'];
+    // $srcBidPoints = $order['src_bid_points'];
+    $srcBidPoints = $order['target_src_bid_points'];
+    // $destAskPoints = $order['dest_ask_points'];
+    $destAskPoints = $order['target_dest_ask_points'];
+
     $transcationState = $order['transcation_state'];
 
     $postTemplate = <<< Template

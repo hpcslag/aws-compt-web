@@ -4,16 +4,19 @@
 $registerUrl = 'http://18.179.14.255/login';
 
 // index page
-$marketOrderUrl = 'http://52.194.252.79/listMarketOrder'; //'data/market_order.json';
+// $marketOrderUrl = 'data/market_order.json';
+$marketOrderUrl = 'http://52.194.252.79/listMarketOrder';
 
 // myorder page
 $myBidOrderUrl = 'data/my_bid_order.json';
 
 // orderprice page
-$myAskOrderUrl = 'http://52.193.225.229/listMarketOrder/listMyBid?user_id=';//'data/my_ask_order.json'; //req_user
+// $myAskOrderUrl = 'data/my_ask_order.json';
+$myAskOrderUrl = 'http://52.193.225.229/listMyBid?user_id=14';
 
 // create Oreder API
-$createOrderUrl = 'http://52.194.252.79/createMarketOrder';//'http://localhost/aws-compt-web/sendOrderAPI.php'; //req_user post body
+// $createOrderUrl = 'http://localhost/aws-compt-web/sendOrderAPI.php';
+$createOrderUrl = 'http://52.194.252.79/createMarketOrder';
 
 // icon url
 $iconUrl = [
