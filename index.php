@@ -526,10 +526,10 @@
 							<p>交易順序: 填寫數量 -> 從您的平台連線扣取點數 -> 等待交易</p>
 
 							<br />
-							<div class="form-group">
+							<form class="form-group" action="http://52.193.225.229/bidTheOrder" method="get">
 								<label for="cc-payment" class="control-label mb-1">交易數量</label>
 								<input id="cc-pament" name="cc-payment" type="text" class="form-control" aria-required="true" aria-invalid="false" value="100.00">
-							</div>
+							</form>
 							<p>*每次出價需要扣除等值 1 元台幣的點數，如果兌換失敗，將會退還!</p>
 						</div>
 						<div class="modal-footer">
@@ -567,10 +567,12 @@
 
 							</p>
 						</div>
-						<div class="modal-footer">
+						<form class="modal-footer" method="get" action="http://52.193.225.229/directlyOrder">
 							<button type="button" class="btn btn-secondary" data-dismiss="modal">取消</button>
 							<button type="button" class="btn btn-primary">確認兌換</button>
-						</div>
+							<input type="text" name="order_id" value="<?php ?>" style="display:hidden;">
+							<input type="text" name="user_id" value="<?php ?>" style="display:hidden;">
+						</form>
 					</div>
 				</div>
 			</div>
