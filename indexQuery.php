@@ -6,11 +6,9 @@ global $iconUrl;
 global $platformName;
 global $marketOrderUrl;
 
-$result = json_decode(file_get_contents($marketOrderUrl), true);
-$orders = $result['data'];
+$orders = json_decode(file_get_contents($marketOrderUrl), true);
 
 foreach ($orders as $order) {
-
     $username = $order['username'];
     $srcPointType = $order['src_point_type'];
     $destPointType = $order['dest_point_type'];
